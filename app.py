@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, render_template, request
 from scipy import stats
+import streamlit as st
 
 warnings.filterwarnings("ignore")
 
@@ -507,9 +508,4 @@ def preview():
 
 
 if __name__ == "__main__":
-    os.makedirs("uploads", exist_ok=True)
-    print("\n" + "=" * 52)
-    print("  🚀  Staffing Analyser running!")
-    print("  👉  Open http://localhost:5000 in your browser")
-    print("=" * 52 + "\n")
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=False)
