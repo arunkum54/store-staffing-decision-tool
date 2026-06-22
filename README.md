@@ -115,9 +115,19 @@ This installs: `flask`, `pandas`, `numpy`, `scipy`
 > - Permission errors → add `--user` flag: `pip install -r requirements.txt --user`
 > - Nothing works → try `python -m pip install -r requirements.txt`
 
+## 3. Running the App
+
+### Option 1: Use the Live Demo
+
+The application is already deployed and available online:
+
+🌐 **Live URL:** https://store-staffing-decision-tool.onrender.com/
+
+> **Note:** This project is hosted on Render's free tier. If the application has been inactive for some time, the server may need to "wake up" before responding. The first load can take around 30–60 seconds (sometimes a little longer). Please be patient and wait for the page to load.
+
 ---
 
-## 3. Running the App
+### Option 2: Run Locally
 
 ```bash
 python app.py
@@ -125,7 +135,7 @@ python app.py
 
 **Expected output:**
 
-```
+```text
 ====================================================
   🚀  Staffing Analyser running!
   👉  Open http://localhost:5000 in your browser
@@ -134,11 +144,19 @@ python app.py
 
 Open **http://localhost:5000** in your browser.
 
-- **To stop:** press `Ctrl + C` in the terminal
-- **To restart:** run `python app.py` again from the same folder
+- **To stop:** Press `Ctrl + C` in the terminal
+- **To restart:** Run `python app.py` again from the same folder
 
 ---
 
+### Troubleshooting
+
+- If the live application takes time to open, wait for the Render server to wake up.
+- If running locally and the browser does not open automatically, manually visit:
+  - http://localhost:5000
+- Ensure all required dependencies are installed before starting the application.
+
+  
 ## 4. Full Walkthrough
 
 ### Step 1 — Upload your CSV
